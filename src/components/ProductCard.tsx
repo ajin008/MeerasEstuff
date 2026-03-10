@@ -12,35 +12,33 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay: index % 3 * 0.15 }}
-      className="group"
+      transition={{ duration: 0.6, delay: (index % 3) * 0.15 }}
+      className="group bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500"
     >
-      {/* Image container — "silhouette reveal" on hover */}
-      <div className="relative aspect-square overflow-hidden bg-foreground/5 mb-4">
+      {/* Image */}
+      <div className="relative aspect-square overflow-hidden">
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover brightness-[0.3] group-hover:brightness-100 transition-all duration-700 ease-out scale-105 group-hover:scale-100"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />
-        {/* Warm light overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-turmeric/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
       </div>
 
-      {/* Text — fades in on hover */}
-      <div className="transition-opacity duration-500 opacity-60 group-hover:opacity-100">
-        <h3 className="font-heading text-foreground text-xl font-normal mb-1">
+      {/* Text */}
+      <div className="p-5">
+        <h3 className="font-heading text-foreground text-xl font-semibold mb-1">
           {product.name}
         </h3>
-        <p className="font-body text-muted-foreground text-sm mb-3 leading-relaxed">
+        <p className="font-body text-muted-foreground text-sm mb-4 leading-relaxed">
           {product.description}
         </p>
         <a
           href="https://wa.me/75231593218"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block font-body text-primary text-xs font-bold tracking-wider uppercase hover:underline"
+          className="inline-block px-5 py-2 bg-primary text-primary-foreground font-body text-xs font-bold tracking-wider uppercase rounded-md transition-colors hover:bg-secondary hover:text-secondary-foreground"
         >
-          Order on WhatsApp →
+          Order on WhatsApp
         </a>
       </div>
     </motion.div>

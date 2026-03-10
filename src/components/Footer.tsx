@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-foreground py-16 px-6">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
         <div className="text-center md:text-left">
-          <h3 className="font-heading text-background text-2xl font-light mb-1">
+          <h3 className="font-heading text-background text-2xl font-semibold mb-1">
             MeerasEstuff
           </h3>
           <p className="font-body text-background/50 text-sm">

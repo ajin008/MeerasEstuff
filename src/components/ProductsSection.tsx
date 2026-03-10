@@ -16,15 +16,15 @@ const ProductsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-turmeric text-sm tracking-[0.3em] uppercase mb-4">
+          <p className="font-body text-accent text-sm tracking-[0.3em] uppercase mb-4">
             Handcrafted
           </p>
-          <h2 className="font-heading text-foreground text-4xl sm:text-6xl font-light">
+          <h2 className="font-heading text-foreground text-4xl sm:text-6xl font-semibold">
             Our Pickle Collection
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, i) => (
             <ProductCard key={product.id} product={product} index={i} />
           ))}

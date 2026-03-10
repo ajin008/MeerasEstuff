@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Teko", "sans-serif"],
+        heading: ["Clash Display", "sans-serif"],
         body: ["Satoshi", "sans-serif"],
       },
       colors: {
@@ -51,11 +51,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "spice-brown": "hsl(var(--spice-brown))",
-        "spice-brown-foreground": "hsl(var(--spice-brown-foreground))",
+        "spice-red": "hsl(var(--spice-red))",
         turmeric: "hsl(var(--turmeric))",
+        "leaf-green": "hsl(var(--leaf-green))",
         cream: "hsl(var(--cream))",
-        "deep-red": "hsl(var(--deep-red))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
