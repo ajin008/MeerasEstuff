@@ -21,7 +21,7 @@ const WhatsAppCTA = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
-          href="https://wa.me/75231593218"
+          href="https://wa.me/9496987436"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-10 py-4 bg-secondary text-secondary-foreground font-body font-bold text-sm tracking-wider uppercase rounded-lg transition-opacity hover:opacity-90"
