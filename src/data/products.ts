@@ -20,7 +20,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Lemon Pickle",
-    description: "Tangy and spicy and tasty homemade lemon pickle.",
+    description: "Tangy and spicy  homemade lemon pickle.",
     image: pickleJar,
   },
   {
