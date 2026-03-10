@@ -13,13 +13,14 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Mango Pickle",
-    description: "Traditional Kerala style mango pickle made with authentic spices.",
+    description:
+      "Traditional Kerala style mango pickle made with authentic spices.",
     image: pickleJar,
   },
   {
     id: 2,
     name: "Lemon Pickle",
-    description: "Tangy and spicy homemade lemon pickle.",
+    description: "Tangy and spicy and tasty homemade lemon pickle.",
     image: pickleJar,
   },
   {
