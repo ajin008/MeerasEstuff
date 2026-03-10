@@ -8,12 +8,11 @@ const AboutSection = () => {
 
   return (
     <section className="relative py-32 overflow-hidden" ref={ref}>
-      {/* Fixed-feel parallax background */}
       <div className="absolute inset-0 -z-10">
         <img
           src={aboutBg}
           alt="Hands working with spices"
-          className="w-full h-full object-cover opacity-15 grayscale"
+          className="w-full h-full object-cover opacity-10 grayscale"
         />
       </div>
 
@@ -22,7 +21,7 @@ const AboutSection = () => {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
-          className="font-body text-turmeric text-sm tracking-[0.3em] uppercase mb-4"
+          className="font-body text-accent text-sm tracking-[0.3em] uppercase mb-4"
         >
           Our Story
         </motion.p>
@@ -31,7 +30,7 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-heading text-foreground text-4xl sm:text-6xl font-light mb-10"
+          className="font-heading text-foreground text-4xl sm:text-6xl font-semibold mb-10"
         >
           The Story of MeerasEstuff
         </motion.h2>

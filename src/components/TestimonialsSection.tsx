@@ -2,18 +2,9 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const testimonials = [
-  {
-    quote: "Best homemade pickle I've tasted.",
-    author: "Anitha R.",
-  },
-  {
-    quote: "Reminds me of my grandmother's cooking.",
-    author: "Deepak M.",
-  },
-  {
-    quote: "Perfect balance of spice and flavor.",
-    author: "Priya S.",
-  },
+  { quote: "Best homemade pickle I've tasted.", author: "Anitha R." },
+  { quote: "Tastes like my grandmother's recipe.", author: "Deepak M." },
+  { quote: "Perfect balance of spice and flavor.", author: "Priya S." },
 ];
 
 const TestimonialsSection = () => {
@@ -29,29 +20,24 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <p className="font-body text-turmeric text-sm tracking-[0.3em] uppercase mb-4">
+          <p className="font-body text-accent text-sm tracking-[0.3em] uppercase mb-4">
             Voices
           </p>
-          <h2 className="font-heading text-foreground text-4xl sm:text-6xl font-light">
+          <h2 className="font-heading text-foreground text-4xl sm:text-6xl font-semibold">
             What People Say
           </h2>
         </motion.div>
 
-        {/* Staggered, overlapping layout */}
-        <div className="relative max-w-3xl mx-auto space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <motion.blockquote
               key={i}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30, y: 20 }}
-              animate={inView ? { opacity: 1, x: 0, y: 0 } : {}}
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.2 }}
-              className="relative border-l-2 border-turmeric pl-6 sm:pl-8 py-6"
-              style={{
-                marginLeft: i === 0 ? "0" : i === 1 ? "15%" : "5%",
-                marginTop: i > 0 ? "-0.5rem" : "0",
-              }}
+              className="bg-card rounded-lg p-8 shadow-sm text-center"
             >
-              <p className="font-body text-foreground text-lg sm:text-xl italic leading-relaxed mb-2">
+              <p className="font-body text-foreground text-lg italic leading-relaxed mb-4">
                 "{t.quote}"
               </p>
               <cite className="font-body text-muted-foreground text-sm not-italic tracking-wider uppercase">
