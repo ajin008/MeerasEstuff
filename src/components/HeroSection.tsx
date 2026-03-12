@@ -41,7 +41,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="font-body text-primary-foreground/80 text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          Traditional homemade pickles crafted with fresh ingredients and authentic Kerala recipes.
+          Traditional homemade pickles crafted with fresh ingredients and
+          authentic Kerala recipes.
         </motion.p>
 
         <motion.div
@@ -57,7 +58,7 @@ const HeroSection = () => {
             View Products
           </a>
           <a
-            href="https://wa.me/75231593218"
+            href="https://wa.me/9496987436"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 border border-primary-foreground/40 text-primary-foreground font-body font-bold text-sm tracking-wider uppercase rounded-lg transition-colors hover:bg-primary-foreground/10"

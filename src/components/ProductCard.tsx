@@ -7,6 +7,10 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, index }: ProductCardProps) => {
+  const message = `Hello, I want to order ${product.name}`;
+  const whatsappUrl = `https://wa.me/919496987436?text=${encodeURIComponent(
+    message
+  )}`;
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -33,7 +37,7 @@ const ProductCard = ({ product, index }: ProductCardProps) => {
           {product.description}
         </p>
         <a
-          href="https://wa.me/75231593218"
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-5 py-2 bg-primary text-primary-foreground font-body text-xs font-bold tracking-wider uppercase rounded-md transition-colors hover:bg-secondary hover:text-secondary-foreground"
