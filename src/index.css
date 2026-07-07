@@ -5,40 +5,41 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --background: 37 42% 96%;
-    --foreground: 0 0% 17%;
+    --background: 33 100% 96%;
+    --foreground: 19 33% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 17%;
+    --card-foreground: 19 33% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 17%;
+    --popover-foreground: 19 33% 9%;
 
-    --primary: 0 64% 33%;
-    --primary-foreground: 37 42% 96%;
+    --primary: 6 80% 54%;
+    --primary-foreground: 33 100% 96%;
 
-    --secondary: 43 82% 46%;
-    --secondary-foreground: 0 0% 17%;
+    --secondary: 40 100% 58%;
+    --secondary-foreground: 19 33% 9%;
 
-    --muted: 37 20% 90%;
-    --muted-foreground: 0 0% 35%;
+    --muted: 33 30% 91%;
+    --muted-foreground: 25 16% 36%;
 
-    --accent: 163 33% 27%;
-    --accent-foreground: 37 42% 96%;
+    --accent: 150 59% 30%;
+    --accent-foreground: 33 100% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 37 20% 88%;
-    --input: 37 20% 88%;
-    --ring: 0 64% 33%;
+    --border: 33 30% 88%;
+    --input: 33 30% 88%;
+    --ring: 6 80% 54%;
 
     --radius: 0.5rem;
 
-    --spice-red: 0 64% 33%;
-    --turmeric: 43 82% 46%;
-    --leaf-green: 163 33% 27%;
-    --cream: 37 42% 96%;
+    --spice-red: 6 80% 54%;
+    --turmeric: 40 100% 58%;
+    --leaf-green: 150 59% 30%;
+    --cream: 33 100% 96%;
+    --whatsapp: 142 70% 49%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

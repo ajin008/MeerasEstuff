@@ -1,6 +1,8 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
+import { designTokens } from "./src/lib/design-tokens";
 
-export default {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -8,7 +10,6 @@ export default {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -18,24 +19,29 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        heading: ["Clash Display", "sans-serif"],
-        body: ["Satoshi", "sans-serif"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        brand: designTokens.colors.brand,
+        neutral: designTokens.colors.neutral,
+        semantic: designTokens.colors.semantic,
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: designTokens.colors.brand.primary,
+          dark: designTokens.colors.brand.primaryDark,
+          foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: designTokens.colors.brand.secondary,
+          foreground: designTokens.colors.neutral.text,
         },
+        whatsapp: {
+          DEFAULT: designTokens.colors.brand.whatsapp,
+          foreground: "#FFFFFF",
+        },
+        // shadcn/ui compatible
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -56,25 +62,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "spice-red": "hsl(var(--spice-red))",
-        turmeric: "hsl(var(--turmeric))",
-        "leaf-green": "hsl(var(--leaf-green))",
-        cream: "hsl(var(--cream))",
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      fontFamily: {
+        body: designTokens.typography.fontFamily.body,
+        display: designTokens.typography.fontFamily.display,
+      },
+      fontSize: designTokens.typography.scale,
+      spacing: designTokens.spacing,
+      borderRadius: designTokens.borderRadius,
+      boxShadow: designTokens.shadows,
+      backgroundImage: {
+        "gradient-hero": designTokens.gradients.hero,
+        "gradient-cta": designTokens.gradients.cta,
       },
       keyframes: {
         "accordion-down": {
@@ -85,12 +84,19 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "fade-in": {
+          from: { opacity: "0", transform: "translateY(10px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+};
+
+export default config;
