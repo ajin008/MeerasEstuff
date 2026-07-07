@@ -10,6 +10,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Why Us", href: "#why-us" },
   { label: "Reviews", href: "#reviews" },
+  { label: "Trade Enquiry", href: "#trade" },
 ];
 
 const Header = () => {

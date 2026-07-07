@@ -6,6 +6,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Why Us", href: "#why-us" },
   { label: "Reviews", href: "#reviews" },
+  { label: "Trade Enquiry", href: "#trade" },
 ];
 
 const displayNumber = `+${WHATSAPP_NUMBER.slice(0, 2)} ${WHATSAPP_NUMBER.slice(2, 7)} ${WHATSAPP_NUMBER.slice(7)}`;
@@ -54,9 +55,15 @@ const Footer = () => {
             href={getWhatsAppUrl("Hello, I want to know more about MeerasEstore pickles")}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-body text-secondary text-sm font-semibold hover:underline"
+            className="block font-body text-secondary text-sm font-semibold hover:underline"
           >
             {displayNumber}
+          </a>
+          <a
+            href="mailto:meerasestuff1974@gmail.com"
+            className="block font-body text-background/60 text-sm mt-2 hover:text-secondary transition-colors"
+          >
+            meerasestuff1974@gmail.com
           </a>
         </div>
       </div>
