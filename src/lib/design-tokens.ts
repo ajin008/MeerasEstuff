@@ -1,5 +1,5 @@
 // src/lib/design-tokens.ts
-// Single source of truth for the MeerasEstuff bold/vibrant spice palette.
+// Single source of truth for the MeerasEstore bold/vibrant spice palette.
 // tailwind.config.ts reads these values; src/index.css HSL vars are kept in sync by hand.
 export const designTokens = {
   colors: {

@@ -26,7 +26,7 @@ const WhatsAppCTA = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
-          href={getWhatsAppUrl("Hello, I want to order MeerasEstuff pickles")}
+          href={getWhatsAppUrl("Hello, I want to order MeerasEstore pickles")}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-10 py-4 bg-whatsapp text-whatsapp-foreground font-body font-bold text-sm tracking-wider uppercase rounded-full shadow-xl transition-transform hover:scale-105"

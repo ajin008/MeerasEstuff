@@ -32,7 +32,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="inline-block font-body text-white text-xs font-bold tracking-[0.3em] uppercase mb-6 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm border border-white/30"
           >
-            🌶 MeerasEstuff · Kerala, India
+            🌶 MeerasEstore · Kerala, India
           </motion.p>
 
           <motion.h1
@@ -67,7 +67,7 @@ const HeroSection = () => {
               View Products
             </a>
             <a
-              href={getWhatsAppUrl("Hello, I want to order MeerasEstuff pickles")}
+              href={getWhatsAppUrl("Hello, I want to order MeerasEstore pickles")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-whatsapp text-whatsapp-foreground font-body font-bold text-sm tracking-wider uppercase rounded-full shadow-lg transition-transform hover:scale-105"

@@ -43,7 +43,7 @@ const AboutSection = () => {
             className="font-heading text-foreground text-4xl sm:text-5xl md:text-6xl font-bold mb-8 leading-tight"
           >
             The Story of{" "}
-            <span className="text-primary">MeerasEstuff</span>
+            <span className="text-primary">MeerasEstore</span>
           </motion.h2>
 
           <motion.div
@@ -56,7 +56,7 @@ const AboutSection = () => {
               "Every jar carries the warmth of a Kerala kitchen."
             </p>
             <p className="font-body text-muted-foreground text-base sm:text-lg leading-relaxed">
-              MeerasEstuff is a small-scale homemade pickle brand based in Kerala.
+              MeerasEstore is a small-scale homemade pickle brand based in Kerala.
               Our pickles are made with fresh ingredients, authentic spices, and
               traditional recipes that bring the true taste of Kerala to every meal.
             </p>

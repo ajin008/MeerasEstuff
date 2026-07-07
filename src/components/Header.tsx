@@ -39,7 +39,7 @@ const Header = () => {
             scrolled ? "text-foreground" : "text-white",
           )}
         >
-          Meeras<span className="text-secondary">Estuff</span>
+          Meeras<span className="text-secondary">Estore</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -60,7 +60,7 @@ const Header = () => {
         </nav>
 
         <a
-          href={getWhatsAppUrl("Hello, I want to know more about MeerasEstuff pickles")}
+          href={getWhatsAppUrl("Hello, I want to know more about MeerasEstore pickles")}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center px-5 py-2 rounded-full bg-whatsapp text-whatsapp-foreground font-body text-sm font-bold tracking-wide uppercase shadow-md hover:opacity-90 transition-opacity"
@@ -83,7 +83,7 @@ const Header = () => {
           </SheetTrigger>
           <SheetContent side="right" className="bg-background">
             <SheetTitle className="font-heading text-2xl font-bold">
-              Meeras<span className="text-primary">Estuff</span>
+              Meeras<span className="text-primary">Estore</span>
             </SheetTitle>
             <nav className="flex flex-col gap-6 mt-10">
               {navLinks.map((link) => (
@@ -98,7 +98,7 @@ const Header = () => {
               ))}
               <SheetClose asChild>
                 <a
-                  href={getWhatsAppUrl("Hello, I want to know more about MeerasEstuff pickles")}
+                  href={getWhatsAppUrl("Hello, I want to know more about MeerasEstore pickles")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex justify-center items-center px-5 py-3 rounded-full bg-whatsapp text-whatsapp-foreground font-body text-sm font-bold tracking-wide uppercase shadow-md"

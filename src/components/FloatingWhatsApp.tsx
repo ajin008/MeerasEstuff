@@ -5,7 +5,7 @@ import WhatsAppIcon from "./icons/WhatsAppIcon";
 const FloatingWhatsApp = () => {
   return (
     <motion.a
-      href={getWhatsAppUrl("Hello, I want to order MeerasEstuff pickles")}
+      href={getWhatsAppUrl("Hello, I want to order MeerasEstore pickles")}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0 }}

@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-12 text-center sm:text-left">
         <div>
           <h3 className="font-heading text-background text-2xl font-bold mb-2">
-            Meeras<span className="text-secondary">Estuff</span>
+            Meeras<span className="text-secondary">Estore</span>
           </h3>
           <p className="font-body text-background/60 text-sm leading-relaxed">
             Authentic homemade Kerala pickles, crafted with love and
@@ -51,7 +51,7 @@ const Footer = () => {
             Kerala, India
           </p>
           <a
-            href={getWhatsAppUrl("Hello, I want to know more about MeerasEstuff pickles")}
+            href={getWhatsAppUrl("Hello, I want to know more about MeerasEstore pickles")}
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-secondary text-sm font-semibold hover:underline"
@@ -63,7 +63,7 @@ const Footer = () => {
 
       <div className="max-w-5xl mx-auto mt-12 pt-8 border-t border-background/10 text-center">
         <p className="font-body text-background/40 text-xs">
-          © 2026 MeerasEstuff. All rights reserved.
+          © 2026 MeerasEstore. All rights reserved.
         </p>
       </div>
     </footer>
