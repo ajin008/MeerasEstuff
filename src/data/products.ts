@@ -14,15 +14,15 @@ export interface Product {
   badge?: string;
 }
 
-import Prawns_Masal_Mix from "@/assets/RoastedDryPrawn&spicyMasala_pickle.png";
+import Prawns_Masal_Mix from "@/assets/newAsset/RoastedDryPrawn&spicyMasala_pickle.png";
 import Fish_Pickle from "@/assets/Fish_pickle.png";
-import Mixed_Veg_Pickle from "@/assets/MixedVeg_pickle.png";
-import Meat_Pickle from "@/assets/Meat_pickle.png";
+import Mixed_Veg_Pickle from "@/assets/newAsset/MixedVeg_pickle.png";
+import Meat_Pickle from "@/assets/newAsset/Meat_pickle.png";
 import Dates_Lemon_Pickle from "@/assets/Dates&Lemon_pickle.png";
-import Garlic_Pickle from "@/assets/Garlic_pickle.png";
-import Dates_Pickle from "@/assets/Dates_pickle.png";
-import Sadya_Mango_Pickle from "@/assets/Mango_pickle.png";
-import Sadya_Lemon_Pickle from "@/assets/Lemon_Pickle.png";
+import Garlic_Pickle from "@/assets/newAsset/Garlic_pickle.png";
+import Dates_Pickle from "@/assets/newAsset/Dates_pickle.png";
+import Sadya_Mango_Pickle from "@/assets/newAsset/Mango_pickle.png";
+import Sadya_Lemon_Pickle from "@/assets/newAsset/Lemon_Pickle.png";
 
 export const products: Product[] = [
   {
