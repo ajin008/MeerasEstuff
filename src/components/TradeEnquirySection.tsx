@@ -1,51 +1,63 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Handshake } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
-import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const TradeEnquirySection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="trade" className="py-24 sm:py-32 px-6 bg-card" ref={ref}>
+    <section
+      id="trade"
+      className="py-24 sm:py-28 px-6 lg:px-10 bg-card border-b border-border"
+      ref={ref}
+    >
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8 }}
-        className="max-w-3xl mx-auto text-center"
+        transition={{ duration: 0.7 }}
+        className="max-w-7xl mx-auto bg-background border border-border p-8 sm:p-14 grid lg:grid-cols-12 gap-10 items-center"
       >
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent text-accent-foreground mb-6">
-          <Handshake className="w-8 h-8" />
+        <div className="lg:col-span-8">
+          <span className="font-body text-xs font-semibold tracking-[0.24em] uppercase text-primary block mb-2">
+            06 / Retail, Export &amp; Hospitality
+          </span>
+          <h2 className="font-heading text-3xl sm:text-5xl text-foreground font-medium mb-4 leading-tight">
+            Stock{" "}
+            <span className="italic font-normal text-primary">
+              MeerasEstuff
+            </span>{" "}
+            at Your Boutique Grocer or Restaurant
+          </h2>
+          <p className="font-body text-muted-foreground text-sm sm:text-base leading-relaxed max-w-2xl">
+            We partner with specialty food stores, Kerala supermarkets,
+            boutique hotels, and catering kitchens looking for authentic,
+            small-batch{" "}
+            <strong className="text-foreground font-medium">
+              Garlic Pickle
+            </strong>{" "}
+            and coastal preserves. Custom bulk jars and wholesale trade pricing
+            available on request.
+          </p>
         </div>
 
-        <p className="inline-block font-body text-primary text-sm font-bold tracking-[0.3em] uppercase mb-4 px-3 py-1 rounded-full bg-primary/10">
-          For Businesses
-        </p>
-
-        <h2 className="font-heading text-foreground text-4xl sm:text-5xl font-bold mb-6">
-          Trade & Dealer Enquiries
-        </h2>
-
-        <p className="font-body text-muted-foreground text-base sm:text-lg leading-relaxed mb-10">
-          Want to stock MeerasEstore pickles at your store, or explore
-          bulk/wholesale orders? We welcome enquiries from retailers,
-          distributors, and dealers looking to bring authentic Kerala
-          pickles to their customers.
-        </p>
-
-        <a
-          href={getWhatsAppUrl(
-            "Hello, I'm interested in a trade/dealer enquiry for MeerasEstore products. Could you share more details on bulk and wholesale pricing?",
-          )}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 px-8 py-3 bg-whatsapp text-whatsapp-foreground font-body font-bold text-sm tracking-wider uppercase rounded-full shadow-lg transition-transform hover:scale-105"
-        >
-          <WhatsAppIcon className="w-5 h-5" />
-          Trade Enquiry on WhatsApp
-        </a>
+        <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3.5 lg:items-end">
+          <a
+            href={getWhatsAppUrl(
+              "Hello, I'm interested in a trade/dealer enquiry for MeerasEstuff products (including Signature Garlic Pickle). Could you share wholesale details?",
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 px-7 py-4 bg-foreground text-background font-body text-xs font-medium tracking-[0.16em] uppercase hover:bg-primary transition-colors"
+          >
+            <span>Request Trade Ledger</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </a>
+          <span className="font-body text-[11px] text-muted-foreground tracking-wide">
+            Direct dispatch from Kerala · Pan-India &amp; Gulf inquiries welcome
+          </span>
+        </div>
       </motion.div>
     </section>
   );

@@ -1,22 +1,20 @@
-import { motion } from "framer-motion";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const FloatingWhatsApp = () => {
   return (
-    <motion.a
-      href={getWhatsAppUrl("Hello, I want to order MeerasEstore pickles")}
+    <a
+      href={getWhatsAppUrl("Hello, I want to order MeerasEstuff Signature Garlic Pickle")}
       target="_blank"
       rel="noopener noreferrer"
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ delay: 2, type: "spring", stiffness: 200 }}
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-whatsapp text-whatsapp-foreground rounded-full flex items-center justify-center shadow-xl hover:opacity-90 transition-opacity"
-      aria-label="Chat on WhatsApp"
+      className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2.5 bg-[#18110E] text-[#F9F5EE] border border-secondary/40 px-4 py-3 shadow-xl hover:bg-primary hover:border-primary transition-colors group"
+      aria-label="Order on WhatsApp"
     >
-      <span className="absolute inset-0 rounded-full bg-whatsapp animate-ping opacity-40" />
-      <WhatsAppIcon className="relative w-7 h-7" />
-    </motion.a>
+      <WhatsAppIcon className="w-4 h-4 text-secondary group-hover:text-white transition-colors" />
+      <span className="font-body text-[11px] font-medium tracking-[0.16em] uppercase hidden sm:inline">
+        Order on WhatsApp
+      </span>
+    </a>
   );
 };
 

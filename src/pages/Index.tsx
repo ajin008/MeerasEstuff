@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
+import SignatureGarlicSection from "@/components/SignatureGarlicSection";
 import ProductsSection from "@/components/ProductsSection";
+import AboutSection from "@/components/AboutSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import TradeEnquirySection from "@/components/TradeEnquirySection";
@@ -11,11 +12,12 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
-    <main className="bg-background">
+    <main className="bg-background min-h-screen">
       <Header />
       <HeroSection />
-      <AboutSection />
+      <SignatureGarlicSection />
       <ProductsSection />
+      <AboutSection />
       <WhyChooseSection />
       <TestimonialsSection />
       <TradeEnquirySection />

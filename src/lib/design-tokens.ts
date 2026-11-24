@@ -1,43 +1,43 @@
 // src/lib/design-tokens.ts
-// Single source of truth for the MeerasEstore bold/vibrant spice palette.
+// Single source of truth for the MeerasEstuff artisanal Kerala heritage aesthetic.
 // tailwind.config.ts reads these values; src/index.css HSL vars are kept in sync by hand.
 export const designTokens = {
   colors: {
     brand: {
-      primary: "#E8402C", // Chili red
-      primaryDark: "#C22A1C", // Chili red, hover/gradient end
-      secondary: "#FFB627", // Turmeric gold
-      accent: "#1F7A4D", // Banana-leaf green
-      whatsapp: "#25D366", // Reserved for WhatsApp CTAs so they stay recognizable
+      primary: "#9E2A1B", // Deep roasted Kashmiri chili / terracotta crimson
+      primaryDark: "#7A1E12", // Aged tamarind / deep spice
+      secondary: "#C6933A", // Antique brass / warm turmeric ochre
+      accent: "#214E34", // Deep curry-leaf / forest green
+      whatsapp: "#1E7E48", // Refined forest-emerald for WhatsApp actions
     },
     neutral: {
-      background: "#FFF7ED", // Warm cream
-      surface: "#FFFFFF",
-      text: "#201510", // Warm ink
-      textMuted: "#6B5A4E",
-      border: "#F0DFCB",
+      background: "#F9F5EE", // Warm unbleached parchment
+      surface: "#F2ECE1", // Soft stone / linen surface
+      text: "#1C1411", // Deep roasted clove ink
+      textMuted: "#685A50", // Warm earth gray
+      border: "#E2D7C5", // Hairline parchment rule
     },
     semantic: {
-      success: "#1F7A4D",
-      warning: "#FFB627",
-      error: "#E8402C",
-      info: "#2D6E8C",
+      success: "#214E34",
+      warning: "#C6933A",
+      error: "#9E2A1B",
+      info: "#2D5A7B",
     },
   },
   typography: {
     fontFamily: {
-      display: "Clash Display, sans-serif", // Headings
-      body: "Satoshi, sans-serif", // Body copy
+      display: "'Cormorant Garamond', Georgia, serif", // Editorial heritage serif
+      body: "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif", // Crisp modern sans
     },
     scale: {
       xs: "0.75rem", // 12px
-      sm: "0.875rem", // 14px
-      base: "1rem", // 16px
-      lg: "1.125rem", // 18px
+      sm: "0.8125rem", // 13px
+      base: "0.9375rem", // 15px
+      lg: "1.0625rem", // 17px
       xl: "1.25rem", // 20px
       "2xl": "1.5rem", // 24px
-      "3xl": "2rem", // 32px
-      "4xl": "2.5rem", // 40px
+      "3xl": "1.875rem", // 30px
+      "4xl": "2.375rem", // 38px
       "5xl": "3rem", // 48px
     },
   },
@@ -51,21 +51,21 @@ export const designTokens = {
     "3xl": "6rem", // 96px
   },
   borderRadius: {
-    sm: "0.25rem", // 4px
-    md: "0.5rem", // 8px
-    lg: "1rem", // 16px
-    xl: "1.5rem", // 24px
+    sm: "0.125rem", // 2px
+    md: "0.25rem", // 4px
+    lg: "0.5rem", // 8px
+    xl: "0.75rem", // 12px
     full: "9999px",
   },
   shadows: {
-    sm: "0 1px 2px rgba(0,0,0,0.05)",
-    md: "0 4px 6px rgba(0,0,0,0.07)",
-    lg: "0 10px 15px rgba(0,0,0,0.08)",
-    xl: "0 20px 25px rgba(0,0,0,0.1)",
-    warm: "0 8px 32px rgba(232,64,44,0.25)",
+    sm: "0 1px 2px rgba(28,20,17,0.04)",
+    md: "0 4px 12px rgba(28,20,17,0.06)",
+    lg: "0 12px 24px rgba(28,20,17,0.08)",
+    xl: "0 20px 40px rgba(28,20,17,0.12)",
+    warm: "0 12px 32px rgba(158,42,27,0.12)",
   },
   gradients: {
-    hero: "linear-gradient(135deg, rgba(232,64,44,0.85) 0%, rgba(194,42,28,0.7) 45%, rgba(255,182,39,0.55) 100%)",
-    cta: "linear-gradient(120deg, #E8402C 0%, #C22A1C 100%)",
+    hero: "linear-gradient(180deg, rgba(20,14,11,0.88) 0%, rgba(28,19,15,0.82) 55%, rgba(20,14,11,0.95) 100%)",
+    cta: "linear-gradient(135deg, #1C1411 0%, #2D1E18 100%)",
   },
 } as const;

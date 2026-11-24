@@ -1,54 +1,55 @@
-@import url("https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
-    --background: 33 100% 96%;
-    --foreground: 19 33% 9%;
+    --background: 38 42% 95%;
+    --foreground: 16 26% 9%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 19 33% 9%;
+    --card: 37 33% 92%;
+    --card-foreground: 16 26% 9%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 19 33% 9%;
+    --popover: 38 42% 95%;
+    --popover-foreground: 16 26% 9%;
 
-    --primary: 6 80% 54%;
-    --primary-foreground: 33 100% 96%;
+    --primary: 7 71% 36%;
+    --primary-foreground: 38 42% 96%;
 
-    --secondary: 40 100% 58%;
-    --secondary-foreground: 19 33% 9%;
+    --secondary: 38 55% 50%;
+    --secondary-foreground: 16 26% 9%;
 
-    --muted: 33 30% 91%;
-    --muted-foreground: 25 16% 36%;
+    --muted: 36 28% 89%;
+    --muted-foreground: 25 13% 36%;
 
-    --accent: 150 59% 30%;
-    --accent-foreground: 33 100% 96%;
+    --accent: 145 40% 22%;
+    --accent-foreground: 38 42% 96%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 33 30% 88%;
-    --input: 33 30% 88%;
-    --ring: 6 80% 54%;
+    --border: 37 31% 83%;
+    --input: 37 31% 83%;
+    --ring: 7 71% 36%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --spice-red: 6 80% 54%;
-    --turmeric: 40 100% 58%;
-    --leaf-green: 150 59% 30%;
-    --cream: 33 100% 96%;
-    --whatsapp: 142 70% 49%;
+    --spice-red: 7 71% 36%;
+    --turmeric: 38 55% 50%;
+    --leaf-green: 145 40% 22%;
+    --cream: 38 42% 95%;
+    --whatsapp: 146 61% 31%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 38 42% 95%;
+    --sidebar-foreground: 16 26% 9%;
+    --sidebar-primary: 7 71% 36%;
+    --sidebar-primary-foreground: 38 42% 96%;
+    --sidebar-accent: 36 28% 89%;
+    --sidebar-accent-foreground: 16 26% 9%;
+    --sidebar-border: 37 31% 83%;
+    --sidebar-ring: 7 71% 36%;
   }
 }
 
@@ -57,9 +58,17 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   body {
     @apply bg-background text-foreground;
-    font-family: "Satoshi", sans-serif;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
   }
 
   h1,
@@ -68,18 +77,18 @@
   h4,
   h5,
   h6 {
-    font-family: "Clash Display", sans-serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
     letter-spacing: -0.01em;
   }
 }
 
 @layer utilities {
   .font-heading {
-    font-family: "Clash Display", sans-serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
     letter-spacing: -0.01em;
   }
 
   .font-body {
-    font-family: "Satoshi", sans-serif;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   }
 }
