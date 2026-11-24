@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { flagshipProduct } from "@/data/products";
+import garlicShowcaseImg from "@/assets/garlic-showcase.jpg";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { ArrowUpRight, Check } from "lucide-react";
 
@@ -72,13 +73,13 @@ const SignatureGarlicSection = () => {
             className="lg:col-span-5"
           >
             <div className="bg-card border border-border p-4 sm:p-6">
-              <div className="relative aspect-square overflow-hidden bg-white border border-border/60">
+              <div className="relative aspect-[4/5] overflow-hidden bg-[#1D1511] border border-border/60">
                 <img
-                  src={flagshipProduct.image}
-                  alt={flagshipProduct.name}
-                  className="w-full h-full object-cover"
+                  src={garlicShowcaseImg}
+                  alt="MeerasEstuff Signature Garlic Pickle"
+                  className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute top-4 left-4 bg-foreground text-background px-3 py-1 font-body text-[10px] font-medium tracking-[0.2em] uppercase">
+                <div className="absolute top-4 left-4 bg-foreground/90 backdrop-blur-sm text-background px-3 py-1 font-body text-[10px] font-medium tracking-[0.2em] uppercase">
                   #1 Bestseller · 100% Vegetarian
                 </div>
               </div>
